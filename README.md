@@ -12,7 +12,9 @@ El sistema permite administrar registros, visualizar información y operar media
 ## 🚀 Demo en producción
 
 👉 https://proyecto-django-jxkv.onrender.com 
+
 👉 Credenciales default: User: Admin / Password: 1234
+
 ---
 
 ## 🧰 Tecnologías usadas
