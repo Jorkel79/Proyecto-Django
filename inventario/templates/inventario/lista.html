@@ -1,0 +1,35 @@
+{% extends "inventario/base.html" %}
+
+{% block content %}
+
+<h1>Inventario</h1>
+
+
+<form method="get">
+    <input type="text" name="q" placeholder="Buscar producto">
+    <button type="submit">Buscar</button>
+</form>
+
+<a href="/nuevo/">➕ Nuevo producto</a>
+
+<ul>
+{% for p in productos %}
+    <li>
+        {{ p.nombre }} | {{ p.cantidad }} | {{ p.ubicacion }}
+
+        <a href="/editar/{{ p.id }}/">✏️ Editar</a>
+
+        <a href="/eliminar/{{ p.id }}/">🗑️ Borrar</a>
+
+       <a href="{% url 'qr_producto' p.id %}"
+        class="btn btn-sm btn-secondary"
+         target="_blank">
+        QR
+        </a>
+
+
+    </li>
+{% endfor %}
+</ul>
+
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends "inventario/base.html" %}
+{% block content %}
+
+<a href="{% url 'exportar_excel' %}" class="btn btn-success">
+    Exportar a Excel
+</a>
+
+
+<h2>Dashboard</h2>
+
+<div class="row">
+
+<div class="col-md-4">
+<div class="card p-3">
+<h5>Total productos</h5>
+<h3>{{ total }}</h3>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card p-3">
+<h5>Bajo stock</h5>
+<h3>{{ bajo }}</h3>
+</div>
+</div>
+
+
+</div>
+
+<h4 class="mt-4">Últimos productos</h4>
+
+<ul>
+{% for p in ultimos %}
+<li>{{ p.nombre }}</li>
+{% endfor %}
+</ul>
+
+{% endblock %}

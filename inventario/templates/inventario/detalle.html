@@ -1,0 +1,16 @@
+{% extends "inventario/base.html" %}
+
+{% block content %}
+<h2>{{ producto.nombre }}</h2>
+
+<ul>
+    <li>Código: {{ producto.codigo }}</li>
+    <li>Cantidad: {{ producto.cantidad }}</li>
+    <li>Ubicación: {{ producto.ubicacion }}</li>
+</ul>
+
+<a href="{% url 'qr_producto' producto.id %}" class="btn btn-secondary">
+    Ver QR
+</a>
+
+{% endblock %}
