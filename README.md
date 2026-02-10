@@ -1,5 +1,11 @@
 # 📦 Proyecto Django – Sistema de Inventario
 
+[![Deploy](https://img.shields.io/badge/deploy-render-green)](https://proyecto-django-jxkv.onrender.com)
+![Django](https://img.shields.io/badge/Django-6.x-darkgreen)
+![Python](https://img.shields.io/badge/Python-3.14-blue)
+![Version](https://img.shields.io/badge/version-1.0-orange)
+![License](https://img.shields.io/badge/license-MIT-purple)
+
 Aplicación web desarrollada con **Django** para la gestión de inventario.  
 El sistema permite administrar registros, visualizar información y operar mediante una interfaz web desplegada en la nube.
 
